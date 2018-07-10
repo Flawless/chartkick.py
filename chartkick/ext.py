@@ -69,7 +69,7 @@ class ChartExtension(Extension):
         options.update(name=name, id=id)
 
         # jinja2 prepends 'l_' or 'l_{{ n }}'(ver>=2.9) to keys
-        if LooseVersion(jinja2.__version__) >= LooseVersion('2.9'):
+        if LooseVersiond(jinja2.__version__) >= LooseVersiond('2.9'):
             kwargs = dict((k[4:], v) for (k, v) in kwargs.items())
         else:
             kwargs = dict((k[2:], v) for (k, v) in kwargs.items())
