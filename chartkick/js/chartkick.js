@@ -1273,11 +1273,9 @@
                 options.scales.xAxes[0].time.unit = "day";
                 step = 1;
               } else if (hour || timeDiff > 0.5) {
-                options.scales.xAxes[0].time.displayFormats = {hour: "MMM D, h a"};
                 options.scales.xAxes[0].time.unit = "hour";
                 step = 1 / 24.0;
               } else if (minute) {
-                options.scales.xAxes[0].time.displayFormats = {minute: "h:mm a"};
                 options.scales.xAxes[0].time.unit = "minute";
                 step = 1 / 24.0 / 60.0;
               }
